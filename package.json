@@ -1,0 +1,21 @@
+{
+  "name": "hello2019",
+  "version": "1.0.0",
+  "description": "Hello, 2019. Bye, 2018.",
+  "main": "app.js",
+  "scripts": {
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development node app.js"
+  },
+  "author": "SkyLightQP",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "log4js": "^3.0.6",
+    "node-sass": "^4.10.0",
+    "nuxt": "^2.3.4",
+    "sass-loader": "^7.1.0"
+  }
+}
