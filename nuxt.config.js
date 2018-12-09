@@ -3,11 +3,19 @@ module.exports = {
         color: 'yellow'
     },
 
-    head:{
+    head: {
         title: '안녕! 2019!',
         meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+            {charset: 'utf-8'},
+            {name: 'viewport', content: 'width=device-width, initial-scale=1'}
         ]
+    },
+
+    css: [
+        {src: '~/assets/css/font.scss', lang: 'sass'}
+    ],
+
+    build: {
+        vendor: ['~/assets/js/timer.js']
     }
 }
