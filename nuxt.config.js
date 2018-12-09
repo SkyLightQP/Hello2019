@@ -13,9 +13,5 @@ module.exports = {
 
     css: [
         {src: '~/assets/css/font.scss', lang: 'sass'}
-    ],
-
-    build: {
-        vendor: ['~/assets/js/timer.js']
-    }
+    ]
 }
