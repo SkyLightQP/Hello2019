@@ -1,33 +1,42 @@
 <template>
     <section>
-        <img src="~/assets/img/SplitShire-09495.jpg"/>
-        <div class="text">
-            <p id="top">2019년 까지...</p>
-            <p id="time">00일 00시 00분 00초</p>
+        <div id="box">
+            <div class="text">
+                <p id="top">2019년 까지...</p>
+                <p id="time">00일 00시 00분 00초</p>
+            </div>
+            <img id="image" src="~/assets/img/SplitShire-09495.jpg"/>
         </div>
     </section>
 </template>
 
 <style lang="scss">
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+    body {
+        overflow: hidden;
     }
 
     .text {
+        position: absolute;
+        height: 30%;
         text-align: center;
-        margin-top: 230px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
 
         #top {
             font-size: 50px;
         }
         #time {
             font-size: 80px;
+            font-weight: 600;
         }
+    }
+
+    #image {
+        max-width: 100%;
+        height: auto;
     }
 </style>
 

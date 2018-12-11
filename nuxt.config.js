@@ -12,6 +12,13 @@ module.exports = {
     },
 
     css: [
-        {src: '~/assets/css/font.scss', lang: 'sass'}
-    ]
+        {src: '~/assets/css/font.scss', lang: 'sass'},
+        {src: 'bootstrap/dist/css/bootstrap.css'}
+    ],
+
+    build: {
+        vendor: [
+            'bootstrap/dist/js/bootstrap.bundle.js'
+        ]
+    }
 }
