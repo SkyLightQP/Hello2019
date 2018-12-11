@@ -38,6 +38,28 @@
         max-width: 100%;
         height: auto;
     }
+
+    @media screen and (max-width: 600px) {
+        .text {
+            #top {
+                font-size: 30px;
+            }
+            #time {
+                font-size: 50px;
+                font-weight: 600;
+            }
+        }
+        #image {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            /* Preserve aspet ratio */
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    }
 </style>
 
 <script>
