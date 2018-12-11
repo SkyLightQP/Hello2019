@@ -45,7 +45,7 @@
                 font-size: 30px;
             }
             #time {
-                font-size: 50px;
+                font-size: 45px;
                 font-weight: 600;
             }
         }
