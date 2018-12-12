@@ -2,7 +2,6 @@
     <section>
         <p class="footer">Copyright 2018. SkyLightQP(하늘빛QP, 하늘빛). All rights reserved.
             GitHub: https://github.com/SkyLightQP/Hello2019
-            Background Image: http://www.splitshire.com
         </p>
     </section>
 </template>

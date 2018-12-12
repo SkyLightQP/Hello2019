@@ -24,6 +24,3 @@ $ npm run dev
 
 ## License
 [MIT License](https://github.com/SkyLightQP/Hello2019/blob/master/LICENSE)
-
-### Background image
-[Splitshire](http://www.splitshire.com)의 이미지가 사용되었습니다.
