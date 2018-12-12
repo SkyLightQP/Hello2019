@@ -2,7 +2,12 @@
     <section>
         <div id="text">
             <p id="top">2019년 까지...</p>
-            <p id="time">00일 00시 00분 00초</p>
+            <div id="time">
+                <span id="d">일</span>
+                <span id="h">시간</span>
+                <span id="m">분</span>
+                <span id="s">초</span>
+            </div>
         </div>
     </section>
 </template>
@@ -61,17 +66,20 @@
             let now = new Date().getTime();
             let leftTime = date - now;
 
-            let d = Math.floor(leftTime / (1000 * 60 * 60 * 24));
-            let h = Math.floor((leftTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let m = Math.floor((leftTime % (1000 * 60 * 60)) / (1000 * 60));
-            let s = Math.floor((leftTime % (1000 * 60)) / 1000);
+            let d = numberFormat(Math.floor(leftTime / (1000 * 60 * 60 * 24)));
+            let h = numberFormat(Math.floor((leftTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            let m = numberFormat(Math.floor((leftTime % (1000 * 60 * 60)) / (1000 * 60)));
+            let s = numberFormat(Math.floor((leftTime % (1000 * 60)) / 1000));
 
             if (leftTime <= 0) {
                 document.getElementById("top").innerHTML = "2019년 까지... D-DAY";
                 document.getElementById("time").innerHTML = "새해 복 많이 받으세요!";
                 clearInterval(timer);
             } else {
-                document.getElementById("time").innerHTML = `${d}일 ${h}시간 ${m}분 ${s}초`;
+                document.getElementById("d").innerHTML = `${d}일`;
+                document.getElementById("h").innerHTML = `${h}시간`;
+                document.getElementById("m").innerHTML = `${m}분`;
+                document.getElementById("s").innerHTML = `${s}초`;
             }
         }, 1000);
     }
