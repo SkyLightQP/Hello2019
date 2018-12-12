@@ -13,6 +13,10 @@
 </template>
 
 <style lang="scss">
+    body {
+        overflow: hidden;
+    }
+
     #text {
         text-align: center;
         margin-top: 240px;
@@ -34,7 +38,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        .text {
+        #text {
             margin-top: 40%;
             #top {
                 font-size: 30px;
