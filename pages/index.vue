@@ -1,33 +1,30 @@
 <template>
     <section>
-        <div id="box">
-            <div id="text">
-                <p id="top">2019년 까지...</p>
-                <p id="time">00일 00시 00분 00초</p>
-            </div>
+        <div id="text">
+            <p id="top">2019년 까지...</p>
+            <p id="time">00일 00시 00분 00초</p>
         </div>
     </section>
 </template>
 
 <style lang="scss">
-    #box {
-            text-align: center;
-            margin-top: 240px;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            color: #FFFFFF;
+    #text {
+        text-align: center;
+        margin-top: 240px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #FFFFFF;
 
-            #top {
-                font-size: 50px;
-                text-shadow: 2px 2px 10px #000000;
-            }
-            #time {
-                font-size: 80px;
-                font-weight: 600;
-                text-shadow: 2px 2px 3px #000000;
-            }
+        #top {
+            font-size: 50px;
+            text-shadow: 2px 2px 10px #000000;
+        }
+        #time {
+            font-size: 80px;
+            font-weight: 600;
+            text-shadow: 2px 2px 3px #000000;
         }
     }
 
@@ -54,7 +51,7 @@
             "linear-gradient(to right, #2AFADF 10%, #4C83FF 100%)"
         ]
         let rand = Math.floor(Math.random() * color.length);
-        document.getElementsByTagName("body")[0].style.backgroundImage=color[rand]
+        document.getElementsByTagName("body")[0].style.backgroundImage = color[rand]
 
         let date = new Date("Jan 1, 2019 00:00:00").getTime();
         const numberFormat = (number) => {
