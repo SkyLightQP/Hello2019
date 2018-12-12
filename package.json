@@ -11,6 +11,7 @@
   "author": "SkyLightQP",
   "license": "ISC",
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
     "cross-env": "^5.2.0",
     "express": "^4.16.3",
     "log4js": "^3.0.5",

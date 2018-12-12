@@ -1,5 +1,6 @@
 <template>
     <section>
+        <div id="background"></div>
         <div id="text">
             <p id="top">2019년 까지...</p>
             <div id="time">
@@ -28,7 +29,7 @@
 
         #top {
             font-size: 50px;
-            text-shadow: 2px 2px 10px #000000;
+            text-shadow: 2px 2px 5px #000000;
         }
         #time {
             font-size: 80px;
