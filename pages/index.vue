@@ -17,7 +17,8 @@
 
 <style lang="scss">
     body {
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
         margin: 0;
     }
 
