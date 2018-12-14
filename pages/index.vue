@@ -1,13 +1,15 @@
 <template>
     <section>
-        <div id="background"></div>
-        <div id="text">
-            <p id="top">2019년 까지...</p>
-            <div id="time">
-                <span id="d">일</span>
-                <span id="h">시간</span>
-                <span id="m">분</span>
-                <span id="s">초</span>
+        <div id="box">
+            <img src="~/assets/background.jpg"/>
+            <div id="text">
+                <span id="top">2019년 까지...</span>
+                <div id="time">
+                    <span id="d">일</span>
+                    <span id="h">시간</span>
+                    <span id="m">분</span>
+                    <span id="s">초</span>
+                </div>
             </div>
         </div>
     </section>
@@ -16,37 +18,56 @@
 <style lang="scss">
     body {
         overflow: hidden;
+        margin: 0;
     }
 
-    #text {
-        text-align: center;
-        margin-top: 240px;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        color: #FFFFFF;
+    #box {
+        position: relative;
 
-        #top {
-            font-size: 50px;
-            text-shadow: 2px 2px 5px #000000;
+        img {
+
         }
-        #time {
-            font-size: 80px;
-            font-weight: 600;
-            text-shadow: 2px 2px 3px #000000;
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000000;
+            margin-top: -220px;
+            margin-left: 150px;
+            width: 1000px;
+
+            #top {
+                font-size: 40px;
+            }
+            #time {
+                font-size: 70px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        #box {
+            #text {
+                margin-top: -120px;
+            }
         }
     }
 
     @media screen and (max-width: 600px) {
-        #text {
-            margin-top: 40%;
-            #top {
-                font-size: 30px;
-            }
-            #time {
-                font-size: 45px;
-                font-weight: 600;
+        #box {
+            #text {
+                width: 50%;
+                margin-top: -230px;
+                margin-left: 0;
+                #top {
+                    font-size: 20px;
+                }
+                #time {
+                    font-size: 40px;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -54,15 +75,6 @@
 
 <script>
     if (process.browser) {
-        const color = [
-            "linear-gradient(to right, #F5CBFF 10%, #C346C2 100%)",
-            "linear-gradient(to right, #FFF720 10%, #3CD500 100%)",
-            "linear-gradient(to right, #FD6E6A 10%, #FFC600 100%)",
-            "linear-gradient(to right, #2AFADF 10%, #4C83FF 100%)"
-        ]
-        let rand = Math.floor(Math.random() * color.length);
-        document.getElementsByTagName("body")[0].style.backgroundImage = color[rand]
-
         let date = new Date("Jan 1, 2019 00:00:00").getTime();
         const numberFormat = (number) => {
             return ("0" + number).slice(-2);

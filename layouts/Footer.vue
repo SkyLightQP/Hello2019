@@ -1,7 +1,6 @@
 <template>
     <section>
-        <p class="footer">GitHub: <a href="https://github.com/SkyLightQP/Hello2019" target="_blank">https://github.com/SkyLightQP/Hello2019</a>
-        </p>
+        <p class="footer">GitHub: <a href="https://github.com/SkyLightQP/Hello2019" target="_blank">https://github.com/SkyLightQP/Hello2019</a>, Designed by AlTaDex</p>
     </section>
 </template>
 
@@ -14,7 +13,6 @@
 <style lang="scss">
     .footer {
         font-size: 12px;
-        font-weight: 400;
         color: #000000;
         position: absolute;
         bottom: 0;
@@ -25,5 +23,11 @@
     a:visited {
         color: black;
         text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .footer {
+            font-size: 10px;
+        }
     }
 </style>

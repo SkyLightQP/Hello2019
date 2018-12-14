@@ -22,5 +22,10 @@ $ npm run dev
 # 개발 모드로 시작합니다.
 ```
 
+## Author
+- 하늘빛QP (개발)
+- AltaDex (디자인)
+
 ## License
 [MIT License](https://github.com/SkyLightQP/Hello2019/blob/master/LICENSE)
+
