@@ -1,7 +1,6 @@
 <template>
     <section>
         <div id="box">
-            <img src="~/assets/background.jpg"/>
             <div id="text">
                 <span id="top">2019년 까지...</span>
                 <div id="time">
@@ -11,6 +10,7 @@
                     <span id="s">초</span>
                 </div>
             </div>
+            <img src="~/assets/background.png"/>
         </div>
     </section>
 </template>
@@ -19,23 +19,22 @@
     body {
         overflow-x: hidden;
         overflow-y: hidden;
+        max-width: 100%;
+        height: 100%;
         margin: 0;
     }
 
     #box {
         position: relative;
 
-        img {
-
-        }
         #text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: #000000;
-            margin-top: -220px;
-            margin-left: 150px;
+            margin-top: -190px;
+            margin-left: 140px;
             width: 1000px;
 
             #top {
@@ -56,12 +55,12 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 630px) {
         #box {
             #text {
-                width: 50%;
-                margin-top: -230px;
-                margin-left: 0;
+                width: 60%;
+                margin-top: -225px;
+                margin-left: 15px;
                 #top {
                     font-size: 20px;
                 }
